@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Projet vétérinaire</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+  /************* nav ********************/
+  .navbar {
+    background-color: rgb(12, 12, 248);
+    border: 0px;
+    position: relative;
+  }
+
+  /************ h1 p ********************/
+  .jumbotron {
+    margin-top: -2em;
+    background-image: url(https://www.vetovermentonchablis.com/wp-content/uploads/logo/logo.jpg);
+    background-size: contain;
+  }
+
+  /************ nav ul ******************/
+  .navbar-nav {
+    float: right;
+    margin-top: -3px;
+    margin-bottom: -10px;
+  }
+  /************ nav li a ****************/
+  .navbar-inverse .navbar-nav>li>a {
+    color: rgb(0, 0, 0);
+  }
+
+  /************ img logo ****************/
+  .logo {
+    width: 45px;
+    margin-top: -13px;
+  }
+
+  mark {
+    background-color: #f915f7;
+  }
+
+  h2 {
+    margin: 1em 0 2em 0;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+  /************ img animaux *************/
+  .chat, .chien, .chien-blanc, .chat-beige, .chien-marron {
+    width: 90%;
+    height: 13.5em;
+  }
+
+  /****** description des animaux ******/
+  .col-sm-4 p {
+    margin-top: 1em;
+  }
+
+  /*********** trait horizontal ********/
+  hr {
+    border: 2px solid black;
+    margin: 3em 1em;
+  }
+
+  footer h2 {
+    text-align: center;
+    margin: 1em 0 2em 0;
+  }
+
+  /************* boutton valider ******/
+  .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+  }
+  /******** sur le boutton valider ***/
+  .btn-default:hover {
+    color: #333;
+    background-color: #07ed14;
+    border-color: #7ef104;
+  }
+
+  /************* textarea ************/
+  textarea.form-control {
+    height: 10em;
+  }
+
+  /* paragraphe : droits d'auteur ***/
+  footer p {
+    text-align: center;
+    font-size: 1.1em;
+  }
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#accueil"><img src="https://st2.depositphotos.com/5056293/9389/v/450/depositphotos_93899252-stock-illustration-vector-sign-veterinary.jpg" alt="logo d'un vétérinaire" class="logo"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#animaux">Animaux</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<div class="jumbotron text-center">
+  <h1 style="font-weight:bold;">Vétérino</h1>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <h2 id="animaux">Présentation des animaux</h2>
+    <div class="col-sm-4">
+      <h3>Animal n°1</h3>
+      <img src="img/ou-trouver-un-eleveur-de-chats-1-1.png" alt="chat" class="chat">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Animal n°2</h3>
+      <img src="img/chien-golden-retriever-male.png" alt="chien" class="chien">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Animal n°3</h3>
+      <img src="img/puppy19033131920jpg_5dd3e0be25fd1.png" alt="chien blanc" class="chien-blanc">       
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Animal n°4</h3>
+      <img src="img/10-astuces-pour-rendre-votre-chat-heureux_5542219.png" alt="chat beige" class="chat-beige">       
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Animal n°5</h3>
+      <img src="img/sentiments-chien-105223.png" alt="chien marron" class="chien-marron">     
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Animal n°6</h3>
+      <img src="img/comment-dresser-un-chat.png" alt="chat gris" class="chat gris">      
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+<hr>
+<footer>
+  <h2 id="contact">Contact</h2>
+    <form class="form-horizontal" action="method-post.php" method="post">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="lastname">Nom :</label>
+        <div class="col-sm-10">
+          <input type="text" name="nom" class="form-control" id="lastname" placeholder="Entrez votre nom" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="firstname">Prénom :</label>
+        <div class="col-sm-10">
+          <input type="text" name="prenom" class="form-control" id="firstname" placeholder="Entrez votre prénom" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="tel">Téléphone :</label>
+        <div class="col-sm-10">
+          <input type="tel" name="tel" class="form-control" id="tel" placeholder="Entrez votre numéro de téléhone" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email :</label>
+        <div class="col-sm-10">
+          <input type="email" name="email" class="form-control" id="email" placeholder="Entrez votre email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="date">Rdv :</label>
+        <div class="col-sm-10">
+          <input type="date" name="date" class="form-control" id="rdv" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="message">Message :</label>
+        <div class="col-sm-10">
+          <textarea type="text" name="message" class="form-control" id="message" placeholder="Résumez" required></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label><input type="checkbox">Souvenez de moi</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" name="envoi" class="btn btn-default">Valider</button>
+        </div>
+      </div>
+    </form>
+    <p>© Copyright 2022. Signé <u>Enis Mermer</u></p>
+</footer>
+</body>
+</html>
